@@ -44,10 +44,10 @@ then move to flexbox and transitions, then work in lightbox */
     header {
     
     background-color: 
-    red;
+    black;
     
     padding: 
-    10px 0; 
+    5px 0; 
     
     }
     
@@ -56,7 +56,7 @@ then move to flexbox and transitions, then work in lightbox */
     #main-logo { 
     
     width: 
-    300px; 
+    400px; 
     
     display: 
     block;
@@ -146,8 +146,7 @@ then move to flexbox and transitions, then work in lightbox */
     box-shadow: 
     0 155px 
     0 0 
-    rgb(255, 
-    0, 0) 
+    grey
     inset;
     
     }
@@ -183,8 +182,7 @@ then move to flexbox and transitions, then work in lightbox */
     box-shadow: 
     0 220px 
     0 0 
-    rgb(255, 
-    0, 0) 
+    gray
     inset;
     
     }
@@ -250,38 +248,40 @@ then move to flexbox and transitions, then work in lightbox */
     150px; 
     
     background-image: 
-    url('../images/marvelSprites.jpg');
+    url('../images/Main\ image.png');
     
     }
     
+    #spaidi1 {
+        background-position: 0px 0;
+    }
     
-    
-    #carol { 
+    #MJ { 
     background-position: -150px 
     0; }
     
-    #clint { 
+    #anit { 
     background-position: -300px 
     0; }
     
-    #hulk { 
+    #tomy { 
     background-position: -450px 
     0; }
     
-    #thor { 
+    #Andrew { 
     background-position: -600px 
     0; }
     
-    #widow { 
+    #green { 
     background-position: -750px 
     0; }
     
     
     
-    #cap:hover, 
-    #carol:hover, #clint:hover,
-    #hulk:hover, 
-    #thor:hover, #widow:hover {
+    #spaidi1:hover, 
+    #MJ:hover, #anit:hover,
+    #tomy:hover, 
+    #Andrew:hover, #green:hover {
     
     background-position-y: 
     -150px; 
@@ -411,7 +411,7 @@ then move to flexbox and transitions, then work in lightbox */
     0.85);
     
     background-image: 
-    url('../images/Cap_LB_Bg.png');
+    url('../images/1\(3\).png');
     
     background-repeat: 
     no-repeat;
@@ -439,7 +439,7 @@ then move to flexbox and transitions, then work in lightbox */
     
     
     #lightbox2 { 
-    background-image: url('../images/Thor_LB_Bg.png'); }
+    background-image: url('../images/2\(3\).png'); }
     
     
     
@@ -473,6 +473,151 @@ then move to flexbox and transitions, then work in lightbox */
     bolder;
     
     }
+    #lightbox3 { 
+        background-image: url('../images/3\(3\).png'); }
+        
+        
+        
+        .lightbox_close {
+        
+        position: 
+        relative;
+        
+        top: 
+        20px;
+        
+        left: 
+        90%;
+        
+        
+        
+        color: 
+        white;
+        
+        font-size: 
+        3em;
+        
+        
+        
+        text-decoration: 
+        none;
+        
+        
+        
+        font-weight: 
+        bolder;
+        
+        }
+        #lightbox4 { 
+            background-image: url('../images/4\(3\).png'); }
+            
+            
+            
+            .lightbox_close {
+            
+            position: 
+            relative;
+            
+            top: 
+            20px;
+            
+            left: 
+            90%;
+            
+            
+            
+            color: 
+            white;
+            
+            font-size: 
+            3em;
+            
+            
+            
+            text-decoration: 
+            none;
+            
+            
+            
+            font-weight: 
+            bolder;
+            
+            }
+            #lightbox5 { 
+                background-image: url('../images/5\(3\).png'); }
+                
+                
+                
+                .lightbox_close {
+                
+                position: 
+                relative;
+                
+                top: 
+                20px;
+                
+                left: 
+                90%;
+                
+                
+                
+                color: 
+                white;
+                
+                font-size: 
+                3em;
+                
+                
+                
+                text-decoration: 
+                none;
+                
+                
+                
+                font-weight: 
+                bolder;
+                
+                }
+                #lightbox6 { 
+                    background-image: url('../images/6\(3\).png'); }
+                    
+                    
+                    
+                    .lightbox_close {
+                    
+                    position: 
+                    relative;
+                    
+                    top: 
+                    20px;
+                    
+                    left: 
+                    90%;
+                    
+                    
+                    
+                    color: 
+                    white;
+                    
+                    font-size: 
+                    3em;
+                    
+                    
+                    
+                    text-decoration: 
+                    none;
+                    
+                    
+                    
+                    font-weight: 
+                    bolder;
+                    
+                    }
+               
+                    
+                    
+                    
+                    
     
     
     
