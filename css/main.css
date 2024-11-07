@@ -1,0 +1,525 @@
+/* Focus in mobile size first and get sprites working,
+
+then move to flexbox and transitions, then work in lightbox */
+
+
+
+.hidden { 
+
+    display: 
+    none; 
+    
+    }
+    
+    
+    
+    html, 
+    body { 
+    
+    height: 
+    100% 
+    
+    }
+    
+    
+    
+    body { 
+    
+    font-family: 
+    Arial, Helvetica, 
+    sans-serif;
+    
+    background-color: 
+    black;
+    
+    color: 
+    white;
+    
+    }
+    
+    
+    
+    /* main header rules */
+    
+    header {
+    
+    background-color: 
+    red;
+    
+    padding: 
+    10px 0; 
+    
+    }
+    
+    
+    
+    #main-logo { 
+    
+    width: 
+    300px; 
+    
+    display: 
+    block;
+    
+    margin: 
+    0 auto;
+    
+    }
+    
+    
+    
+    /* main rules here */
+    
+    #character_nav {
+    
+    background-color: 
+    #675050;
+    
+    
+    
+    background-image: 
+    url('../images/characters_art_mas_mob_01.jpeg');
+    
+    background-repeat: 
+    no-repeat;
+    
+    background-size: 
+    cover;
+    
+    
+    
+    background-blend-mode: 
+    multiply;
+    
+    }
+    
+    
+    
+    .characters { 
+    
+    list-style-type: 
+    none; 
+    
+    display: 
+    flex;
+    
+    flex-wrap: 
+    wrap;
+    
+    justify-content: 
+    center;
+    
+    padding: 
+    0;
+    
+    }
+    
+    
+    
+    .characters 
+    li { 
+    
+    height: 
+    220px;
+    
+    margin: 
+    10px 8px;
+    
+    
+    
+    background-color: 
+    black;
+    
+    
+    
+    text-align: 
+    left;
+    
+    cursor: 
+    pointer;
+    
+    
+    
+    transition: box-shadow 
+    0.2s ease;
+    
+    box-shadow: 
+    0 155px 
+    0 0 
+    rgb(255, 
+    0, 0) 
+    inset;
+    
+    }
+    
+    
+    
+    .characters 
+    li h5 {
+    
+    color: 
+    white;
+    
+    padding: 
+    12px 8px;
+    
+    }
+    
+    
+    
+    .characters 
+    li a { 
+    
+    text-decoration: 
+    none; 
+    
+    }
+    
+    
+    
+    .characters 
+    li:hover { 
+    
+    box-shadow: 
+    0 220px 
+    0 0 
+    rgb(255, 
+    0, 0) 
+    inset;
+    
+    }
+    
+    
+    
+    article, 
+    #instructions { 
+    
+    padding: 
+    20px; 
+    
+    }
+    
+    
+    
+    article 
+    h3, #instructions 
+    h3 {
+    
+    font-size: 
+    32px;
+    
+    text-align: 
+    center;
+    
+    margin-bottom: 
+    14px;
+    
+    }
+    
+    
+    
+    article 
+    p, #instructions 
+    p {
+    
+    width: 
+    80%;
+    
+    font-size: 
+    18px;
+    
+    line-height: 
+    22px;
+    
+    text-align: 
+    center;
+    
+    margin: 
+    auto;
+    
+    }
+    
+    
+    
+    .sprite {
+    
+    width: 
+    150px;
+    
+    height: 
+    150px; 
+    
+    background-image: 
+    url('../images/marvelSprites.jpg');
+    
+    }
+    
+    
+    
+    #carol { 
+    background-position: -150px 
+    0; }
+    
+    #clint { 
+    background-position: -300px 
+    0; }
+    
+    #hulk { 
+    background-position: -450px 
+    0; }
+    
+    #thor { 
+    background-position: -600px 
+    0; }
+    
+    #widow { 
+    background-position: -750px 
+    0; }
+    
+    
+    
+    #cap:hover, 
+    #carol:hover, #clint:hover,
+    #hulk:hover, 
+    #thor:hover, #widow:hover {
+    
+    background-position-y: 
+    -150px; 
+    
+    }
+    
+    
+    
+    /* not sure I want to show them !important yet */
+    
+    
+    
+    /* .sprite:hover {
+    
+    background-position-y: -150px !important;
+    
+    } */
+    
+    
+    
+    /* footer rules here */
+    
+    footer {
+    
+    color: 
+    white;
+    
+    padding: 
+    20px 0;
+    
+    text-align: 
+    center;
+    
+    }
+    
+    
+    
+    /* .sticky_footer {
+    
+    position: sticky;
+    
+    top: 100%;
+    
+    
+    
+    height: 80px;
+    
+    background-color: rgb(40, 37, 37);
+    
+    } */
+    
+    
+    
+    .sticky_footer {
+    
+    position: 
+    sticky;
+    
+    top: 
+    100%;
+    
+    
+    
+    height: 
+    80px;
+    
+    background-color: 
+    rgb(40, 
+    37, 37);
+    
+    }
+    
+    
+    
+    /* .sticky_footer {
+    
+    position: fixed;
+    
+    bottom: 0;
+    
+    left: 0;
+    
+    right: 0;
+    
+    
+    
+    height: 80px;
+    
+    background-color: rgb(40, 37, 37);
+    
+    } */
+    
+    
+    
+    
+    
+    
+    
+    /* lightbox rules here */
+    
+    
+    
+    .lightbox { 
+    
+    width: 
+    100vw; /* vw = viewport width => screen width */
+    
+    height: 
+    100vh; /* vh = viewport height => screen height */
+    
+    
+    
+    position: 
+    absolute;
+    
+    top: 
+    0;
+    
+    left: 
+    0;
+    
+    
+    
+    background-color: 
+    rgba(0, 
+    0, 0, 
+    0.85);
+    
+    background-image: 
+    url('../images/Cap_LB_Bg.png');
+    
+    background-repeat: 
+    no-repeat;
+    
+    
+    
+    background-size: 
+    55vh; /* 55% of the viewport height */
+    
+    background-position: 
+    40px bottom;
+    
+    
+    
+    z-index: 
+    5000;
+    
+    
+    
+    display: 
+    none;
+    
+    }
+    
+    
+    
+    #lightbox2 { 
+    background-image: url('../images/Thor_LB_Bg.png'); }
+    
+    
+    
+    .lightbox_close {
+    
+    position: 
+    relative;
+    
+    top: 
+    20px;
+    
+    left: 
+    90%;
+    
+    
+    
+    color: 
+    white;
+    
+    font-size: 
+    3em;
+    
+    
+    
+    text-decoration: 
+    none;
+    
+    
+    
+    font-weight: 
+    bolder;
+    
+    }
+    
+    
+    
+    .lightbox_close:hover { 
+    opacity: 0.5; 
+    color: red; }
+    
+    
+    
+    .lightbox 
+    article {
+    
+    width: 
+    55%;
+    
+    margin-left: 
+    40%;
+    
+    padding-top: 
+    50px;
+    
+    }
+    
+    
+    
+    .lb_text, 
+    .lb_heading { text-align: 
+    left; }
+    
+    
+    
+    .lb_text {
+    
+    line-height: 
+    1.6 !important;
+    
+    margin-left: 
+    0;
+    
+    padding-top: 
+    2em;
+    
+    }
+    
+    
+    
+    /* turn the lightbox on using the :target pseudo selector */
+    
+    .lightbox:target { 
+    display: block; }
